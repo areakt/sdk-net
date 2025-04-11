@@ -16,9 +16,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1AB63BA9-F
 		SECURITY.md = SECURITY.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkordAI.Sdk", "src\AkordAI.Sdk\AkordAI.Sdk.csproj", "{FC57A49E-45B8-4EEF-EB02-228890D5DF09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83E214F4-721A-438F-8A84-D4AA1E7035EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC57A49E-45B8-4EEF-EB02-228890D5DF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC57A49E-45B8-4EEF-EB02-228890D5DF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC57A49E-45B8-4EEF-EB02-228890D5DF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC57A49E-45B8-4EEF-EB02-228890D5DF09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC57A49E-45B8-4EEF-EB02-228890D5DF09} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77F040E6-2A45-4E64-A1D6-5D3E9FC1E430}

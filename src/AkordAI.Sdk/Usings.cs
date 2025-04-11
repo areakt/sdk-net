@@ -1,4 +1,6 @@
-﻿global using Neuroglia;
+﻿global using AkordAI.Sdk.Models;
+global using FluentValidation;
+global using Neuroglia;
 global using System.Collections;
 global using System.ComponentModel;
 global using System.ComponentModel.DataAnnotations;
