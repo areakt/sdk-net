@@ -16,8 +16,8 @@
 	<PackageTags>akordai;dsl;sdk</PackageTags>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	<PackageReadmeFile>readme.md</PackageReadmeFile>
-	<Copyright>Copyright © 2024-Present The AkordAI Authors. All rights reserved.</Copyright>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<Copyright>Copyright © 2025-Present The AkordAI Authors. All rights reserved.</Copyright>
 	<PackageProjectUrl>https://github.com/akordai/sdk-net</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/akordai/sdk-net</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
