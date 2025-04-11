@@ -1,6 +1,6 @@
-﻿# 👥 Contributing to `areakt/net-sdk`
+﻿# 👥 Contributing to `akordai/net-sdk`
 
-Thanks for your interest in contributing to the [Areakt .NET SDK](https://github.com/areakt/sdk-net) — we’re building a composable, expressive agentic orchestration framework for the future of AI workflows.
+Thanks for your interest in contributing to the [AkordAI .NET SDK](https://github.com/akordai/sdk-net) — we’re building a composable, expressive agentic orchestration framework for the future of AI workflows.
 
 Whether you're fixing bugs, improving documentation, or implementing new capabilities — we appreciate your help!
 
@@ -85,4 +85,4 @@ We are committed to a respectful and inclusive environment. Please read our [Cod
 
 You're helping shape a modular, open foundation for agent orchestration in AI-native applications. We’re grateful you're here.
 
-— The Areakt Team
+— The AkordAI Team

@@ -1,8 +1,8 @@
 ﻿# Code of Conduct
 
-## 🌐 Areakt Community Code of Conduct
+## 🌐 AkordAI Community Code of Conduct
 
-As contributors and maintainers of the Areakt project, we pledge to foster a community that is:
+As contributors and maintainers of the AkordAI project, we pledge to foster a community that is:
 
 - 🛠️ **Inclusive**
 - 📚 **Respectful**
@@ -40,7 +40,7 @@ Examples of unacceptable behavior include:
 
 If you witness or experience unacceptable behavior, please report it confidentially:
 
-📧 **Email**: conduct@areakt.dev
+📧 **Email**: info@akord-ai.com
 
 All reports will be reviewed and investigated promptly and fairly. We will respect confidentiality and act in the best interest of community safety.
 
@@ -64,4 +64,4 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 We strive to build not just a powerful agentic orchestration system, but a community as thoughtful and adaptive as the agents it empowers.
 
-**— The Areakt Team**
+**— The AkordAI Team**
