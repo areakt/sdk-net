@@ -1,40 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	
   <PropertyGroup>
-	<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<VersionPrefix>0.3.0</VersionPrefix>
-	<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
-	<FileVersion>$(VersionPrefix)</FileVersion>
-	<NeutralLanguage>en</NeutralLanguage>
-	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<IsPackable>true</IsPackable>
-	<Title>AkordAI SDK</Title>
-	<Description>Contains AkordAI DSL models</Description>
-	<PackageTags>akordai;dsl;sdk</PackageTags>
-	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<Copyright>Copyright © 2025-Present The AkordAI Authors. All rights reserved.</Copyright>
-	<PackageProjectUrl>https://github.com/akordai/sdk-net</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/akordai/sdk-net</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<DebugType>embedded</DebugType>
+    <VersionPrefix>0.3.0</VersionPrefix>
+    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+    <FileVersion>$(VersionPrefix)</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+    <Title>AkordAI SDK</Title>
+    <Description>Contains AkordAI DSL models</Description>
+    <PackageTags>akordai;dsl;sdk</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright © 2025-Present The AkordAI Authors. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/akordai/sdk-net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/akordai/sdk-net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+    <Pack>True</Pack>
+    <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-	
+  	
   <ItemGroup>
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="Neuroglia.Serialization" Version="4.21.0" />
-	<PackageReference Include="Neuroglia.Serialization.YamlDotNet" Version="4.21.0" />
+    <PackageReference Include="Neuroglia.Serialization.YamlDotNet" Version="4.21.0" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 
