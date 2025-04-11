@@ -41,4 +41,10 @@ public record ReasoningCapabilityDefinition
     [DataMember(Name = "api", Order = 3), JsonPropertyName("api"), JsonPropertyOrder(3), YamlMember(Alias = "api", Order = 3)]
     public virtual RuntimeCapabilityApiDefinition Api { get; set; } = null!;
 
+    /// <summary>
+    /// Gets/sets the optional provider-specific parameters used when invoking the model, such as temperature, top_p, max_tokens, stop, etc.
+    /// </summary>
+    [DataMember(Name = "settings", Order = 4), JsonPropertyName("settings"), JsonPropertyOrder(4), YamlMember(Alias = "settings", Order = 4)]
+    public virtual EquatableDictionary<string, object>? Settings { get; set; }
+
 }
