@@ -20,6 +20,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkordAI.Sdk", "src\AkordAI.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{83E214F4-721A-438F-8A84-D4AA1E7035EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{11A05500-DFD1-4AAA-A57D-6738271BDDD3}"
+	ProjectSection(SolutionItems) = preProject
+		.github\PULL_REQUEST_TEMPLATE.md = .github\PULL_REQUEST_TEMPLATE.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISSUE_TEMPLATE", "ISSUE_TEMPLATE", "{3AD05809-A60C-4BAC-AEDB-19CAC3989A5E}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug.yml = .github\ISSUE_TEMPLATE\bug.yml
+		.github\ISSUE_TEMPLATE\config.yml = .github\ISSUE_TEMPLATE\config.yml
+		.github\ISSUE_TEMPLATE\feature.yml = .github\ISSUE_TEMPLATE\feature.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{416E8E0D-9AB3-41BB-9718-CCBA7BEA112E}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+		.github\workflows\test.yml = .github\workflows\test.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +54,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC57A49E-45B8-4EEF-EB02-228890D5DF09} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3AD05809-A60C-4BAC-AEDB-19CAC3989A5E} = {11A05500-DFD1-4AAA-A57D-6738271BDDD3}
+		{416E8E0D-9AB3-41BB-9718-CCBA7BEA112E} = {11A05500-DFD1-4AAA-A57D-6738271BDDD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77F040E6-2A45-4E64-A1D6-5D3E9FC1E430}
