@@ -11,13 +11,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-global using AkordAI.Sdk.Models;
-global using FluentValidation;
-global using Neuroglia;
-global using System.Collections;
-global using System.ComponentModel;
-global using System.ComponentModel.DataAnnotations;
-global using System.Runtime.Serialization;
-global using System.Text;
-global using System.Text.Json.Serialization;
-global using YamlDotNet.Serialization;
+namespace AkordAI.Sdk;
+
+/// <summary>
+/// Exposes AkordAI constants and defaults
+/// </summary>
+public static class AkordAIDefaults
+{
+
+    /// <summary>
+    /// Gets the default block used to separate memory entries
+    /// </summary>
+    public const string MemoryEntrySeparator = "\n\n---\n\n";
+
+}
