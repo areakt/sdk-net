@@ -28,7 +28,8 @@ public record BearerAuthenticationSchemeDefinition
     /// <summary>
     /// Gets/sets the bearer token used for authentication
     /// </summary>
+    [Required, MinLength(1)]
     [DataMember(Name = "token", Order = 1), JsonPropertyName("token"), JsonPropertyOrder(1), YamlMember(Alias = "token", Order = 1)]
-    public virtual string? Token { get; set; }
+    public virtual string Token { get; set; } = null!;
 
 }

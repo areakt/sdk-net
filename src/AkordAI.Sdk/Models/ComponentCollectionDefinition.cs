@@ -14,10 +14,10 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the definition of a collection of reusable resources
+/// Represents the definition of a collection of reusable components
 /// </summary>
 [DataContract]
-public record ResourceCollectionDefinition
+public record ComponentCollectionDefinition
 {
 
     /// <summary>
@@ -30,13 +30,13 @@ public record ResourceCollectionDefinition
     /// Gets/sets a name/definition mapping, if any, of reusable functions
     /// </summary>
     [DataMember(Name = "functions", Order = 2), JsonPropertyName("functions"), JsonPropertyOrder(2), YamlMember(Alias = "functions", Order = 2)]
-    public virtual Map<string, FunctionDefinition>? Functions { get; set; }
+    public virtual Map<string, KernelFunctionDefinition>? Functions { get; set; }
 
     /// <summary>
-    /// Gets/sets a name/definition mapping, if any, of reusable runtimes
+    /// Gets/sets a name/definition mapping, if any, of reusable kernels
     /// </summary>
-    [DataMember(Name = "runtimes", Order = 3), JsonPropertyName("runtimes"), JsonPropertyOrder(3), YamlMember(Alias = "runtimes", Order = 3)]
-    public virtual Map<string, RuntimeDefinition>? Runtimes { get; set; }
+    [DataMember(Name = "kernels", Order = 3), JsonPropertyName("kernels"), JsonPropertyOrder(3), YamlMember(Alias = "kernels", Order = 3)]
+    public virtual Map<string, KernelDefinition>? Kernels { get; set; }
 
     /// <summary>
     /// Gets/sets a name/definition mapping, if any, of reusable memories

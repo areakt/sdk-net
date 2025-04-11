@@ -20,21 +20,13 @@ public static class AuthenticationScheme
 {
 
     /// <summary>
-    /// Gets the 'Basic' authentication scheme
+    /// Gets the 'ApiKey' authentication scheme
     /// </summary>
-    public const string Basic = "Basic";
+    public const string ApiKey = "ApiKey";
     /// <summary>
     /// Gets the 'Bearer' authentication scheme
     /// </summary>
     public const string Bearer = "Bearer";
-    /// <summary>
-    /// Gets the 'Certificate' authentication scheme
-    /// </summary>
-    public const string Certificate = "Certificate";
-    /// <summary>
-    /// Gets the 'Digest' authentication scheme
-    /// </summary>
-    public const string Digest = "Digest";
     /// <summary>
     /// Gets the 'OAUTH2' authentication scheme
     /// </summary>
@@ -50,10 +42,8 @@ public static class AuthenticationScheme
     /// <returns>A new <see cref="IEnumerable{T}"/> containing the authentication schemes supported by default</returns>
     public static IEnumerable<string> AsEnumerable()
     {
-        yield return Basic;
+        yield return ApiKey;
         yield return Bearer;
-        yield return Certificate;
-        yield return Digest;
         yield return OAuth2;
         yield return OpenIDConnect;
     }

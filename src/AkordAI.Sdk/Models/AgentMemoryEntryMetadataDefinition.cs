@@ -24,7 +24,7 @@ public record AgentMemoryEntryMetadataDefinition
     /// Gets/sets the definition of the strategy, if any, used to dynamically resolve the metadata of a memory entry
     /// </summary>
     [DataMember(Name = "resolution", Order = 1), JsonPropertyName("resolution"), JsonPropertyOrder(1), YamlMember(Alias = "resolution", Order = 1)]
-    public virtual AgentMemoryEntryMetadataDefinition? Resolution { get; set; }
+    public virtual AgentMemoryMetadataResolutionStrategyDefinition? Resolution { get; set; }
 
     /// <summary>
     /// Gets/sets the static values to use when initializing a memory entry produced by the agent

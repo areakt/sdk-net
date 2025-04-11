@@ -14,7 +14,7 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the definition of the API used by a runtime capability
+/// Represents the definition of the API used by a kernel capability
 /// </summary>
 [DataContract]
 public record RuntimeCapabilityApiDefinition

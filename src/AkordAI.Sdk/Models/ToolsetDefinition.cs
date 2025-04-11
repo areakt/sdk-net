@@ -18,7 +18,7 @@ namespace AkordAI.Sdk.Models;
 /// </summary>
 [DataContract]
 public record ToolsetDefinition
-    : ComponentDefinition
+    : ReferenceableComponentDefinition
 {
 
     /// <summary>

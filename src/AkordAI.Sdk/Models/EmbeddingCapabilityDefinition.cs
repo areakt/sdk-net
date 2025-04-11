@@ -14,7 +14,7 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the configuration of a embedding capability within a runtime environment
+/// Represents the configuration of a embedding capability within a kernel environment
 /// </summary>
 [DataContract]
 public record EmbeddingCapabilityDefinition

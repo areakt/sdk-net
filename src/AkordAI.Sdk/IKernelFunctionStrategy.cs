@@ -11,18 +11,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace AkordAI.Sdk.Models.Authentication;
+namespace AkordAI.Sdk;
 
 /// <summary>
-/// Represents the definition of a certificate authentication scheme
+/// Defines the fundamentals of a kernel function based strategy
 /// </summary>
-[DataContract]
-public record CertificateAuthenticationSchemeDefinition
-    : AuthenticationSchemeDefinition
+public interface IKernelFunctionStrategy
 {
 
-    /// <inheritdoc/>
-    [IgnoreDataMember, JsonIgnore, YamlIgnore]
-    public override string Scheme => AuthenticationScheme.Certificate;
+    /// <summary>
+    /// Gets the definition of the kernel function to invoke as part of the strategy
+    /// </summary>
+    KernelFunctionDefinition Function { get; }
+
+    /// <summary>
+    /// Gets the definition of the kernel used to run the function
+    /// </summary>
+    KernelDefinition Kernel { get; }
 
 }

@@ -35,16 +35,16 @@ public record AgentDefinition
     public virtual string Instructions { get; set; } = null!;
 
     /// <summary>
-    /// Gets/sets the runtime configuration that powers the agent's capabilities
+    /// Gets/sets the definition of the kernel that powers the agent's capabilities
     /// </summary>
     [Required]
-    [DataMember(Name = "runtime", Order = 3), JsonPropertyName("runtime"), JsonPropertyOrder(3), YamlMember(Alias = "runtime", Order = 3)]
-    public virtual RuntimeDefinition Runtime { get; set; } = null!;
+    [DataMember(Name = "kernel", Order = 3), JsonPropertyName("kernel"), JsonPropertyOrder(3), YamlMember(Alias = "kernel", Order = 3)]
+    public virtual KernelDefinition Kernel { get; set; } = null!;
 
     /// <summary>
     /// Gets/sets the definition of the agent's memory, if any
     /// </summary>
     [DataMember(Name = "memory", Order = 4), JsonPropertyName("memory"), JsonPropertyOrder(4), YamlMember(Alias = "memory", Order = 4)]
-    public virtual AgentMemoryOptions? Memory { get; set; }
+    public virtual AgentMemoryCapabilityDefinition? Memory { get; set; }
 
 }

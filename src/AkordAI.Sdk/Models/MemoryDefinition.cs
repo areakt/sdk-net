@@ -33,7 +33,7 @@ public record MemoryDefinition
     public virtual KeyValueMemoryDefinition? KeyValue { get; set; }
 
     /// <summary>
-    /// Gets/sets the definition of a static memory that returns predefined values without runtime lookup
+    /// Gets/sets the definition of a static memory that returns predefined values without kernel lookup
     /// </summary>
     [DataMember(Name = "static", Order = 1), JsonPropertyName("static"), JsonPropertyOrder(1), YamlMember(Alias = "static", Order = 1)]
     public virtual StaticMemoryDefinition? Static { get; set; }

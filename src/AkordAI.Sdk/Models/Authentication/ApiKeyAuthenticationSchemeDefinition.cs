@@ -14,27 +14,22 @@
 namespace AkordAI.Sdk.Models.Authentication;
 
 /// <summary>
-/// Represents the definition of a basic authentication scheme
+/// Represents the definition of an API key authentication scheme
 /// </summary>
 [DataContract]
-public record BasicAuthenticationSchemeDefinition
+public record ApiKeyAuthenticationSchemeDefinition
     : AuthenticationSchemeDefinition
 {
 
     /// <inheritdoc/>
     [IgnoreDataMember, JsonIgnore, YamlIgnore]
-    public override string Scheme => AuthenticationScheme.Basic;
+    public override string Scheme => AuthenticationScheme.ApiKey;
 
     /// <summary>
-    /// Gets/sets the username used for authentication
+    /// Gets/sets the key used for authentication
     /// </summary>
-    [DataMember(Name = "username", Order = 1), JsonPropertyName("username"), JsonPropertyOrder(1), YamlMember(Alias = "username", Order = 1)]
-    public virtual string? Username { get; set; }
-
-    /// <summary>
-    /// Gets/sets the password used for authentication
-    /// </summary>
-    [DataMember(Name = "password", Order = 2), JsonPropertyName("password"), JsonPropertyOrder(2), YamlMember(Alias = "password", Order = 2)]
-    public virtual string? Password { get; set; }
+    [Required, MinLength(1)]
+    [DataMember(Name = "key", Order = 1), JsonPropertyName("key"), JsonPropertyOrder(1), YamlMember(Alias = "key", Order = 1)]
+    public virtual string Key { get; set; } = null!;
 
 }

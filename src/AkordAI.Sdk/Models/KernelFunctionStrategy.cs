@@ -14,13 +14,19 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the definition of a strategy that defines how an agent should resolve the metadata of memory entries
+/// Represents the definition of a kernel function–based strategy
 /// </summary>
 [DataContract]
-public record AgentMemoryMetadataResolutionStrategyDefinition
-    : KernelFunctionStrategy
+public record KernelFunctionStrategy
 {
 
+    /// <inheritdoc/>
+    [Required]
+    [DataMember(Name = "function", Order = 1), JsonPropertyName("function"), JsonPropertyOrder(1), YamlMember(Alias = "function", Order = 1)]
+    public virtual KernelFunctionDefinition Function { get; set; } = null!;
 
+    /// <inheritdoc/>
+    [DataMember(Name = "kernel", Order = 2), JsonPropertyName("kernel"), JsonPropertyOrder(2), YamlMember(Alias = "kernel", Order = 2)]
+    public virtual KernelDefinition Kernel { get; set; } = null!;
 
 }

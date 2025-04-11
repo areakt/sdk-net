@@ -28,9 +28,9 @@ public record WorkflowDefinition
     public virtual WorkflowDefinitionMetadata Metadata { get; set; } = null!;
 
     /// <summary>
-    /// Gets/sets the workflow's reusable resource collection, if any
+    /// Gets/sets the workflow's reusable component collection, if any
     /// </summary>
-    [DataMember(Name = "resources", Order = 2), JsonPropertyName("resources"), JsonPropertyOrder(2), YamlMember(Alias = "resources", Order = 2)]
-    public virtual ResourceCollectionDefinition? Resources { get; set; }
+    [DataMember(Name = "components", Order = 2), JsonPropertyName("components"), JsonPropertyOrder(2), YamlMember(Alias = "components", Order = 2)]
+    public virtual ComponentCollectionDefinition? Components { get; set; }
 
 }

@@ -14,10 +14,10 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the definition of a function
+/// Represents the definition of a kernel function
 /// </summary>
 [DataContract]
-public record FunctionDefinition
+public record KernelFunctionDefinition
 {
 
     /// <summary>

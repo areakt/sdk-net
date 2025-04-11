@@ -14,10 +14,10 @@
 namespace AkordAI.Sdk.Models;
 
 /// <summary>
-/// Represents the definition of an agent memory
+/// Represents the definition of an agent's memory capability
 /// </summary>
 [DataContract]
-public record AgentMemoryOptions
+public record AgentMemoryCapabilityDefinition
 {
 
     /// <summary>
