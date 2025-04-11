@@ -22,10 +22,10 @@ public record KernelDefinition
 {
 
     /// <summary>
-    /// Gets/sets the uri of the kernel definition to extend, if any
+    /// Gets/sets a reference to the kernel definition to extend, if any
     /// </summary>
     [DataMember(Name = "extends", Order = 1), JsonPropertyName("extends"), JsonPropertyOrder(1), YamlMember(Alias = "extends", Order = 1)]
-    public virtual Uri? Extends { get; set; }
+    public virtual string? Extends { get; set; }
 
     /// <summary>
     /// Gets/sets the configuration of the kernel's reasoning capability, if any

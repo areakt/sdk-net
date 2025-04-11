@@ -20,8 +20,8 @@ public interface IReferenceable
 {
 
     /// <summary>
-    /// Gets an URI, if any, that references the object's definition
+    /// Gets a reference, if any, to the object's definition
     /// </summary>
-    Uri? Use { get; }
+    string? Use { get; }
 
 }
